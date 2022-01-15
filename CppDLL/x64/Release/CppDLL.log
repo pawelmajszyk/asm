@@ -1,0 +1,17 @@
+﻿  pch.cpp
+  algorytmCpp.cpp
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(10,1): warning C4273: 'sepia': inconsistent dll linkage
+C:\Sem5\JAApp\CppDLL\algorytmCpp.h(13,33): message : see previous definition of 'sepia'
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(24,60): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(25,62): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(26,61): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(32,25): warning C4244: '=': conversion from 'float' to 'byte', possible loss of data
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(33,25): warning C4244: '=': conversion from 'float' to 'byte', possible loss of data
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(34,21): warning C4244: '=': conversion from 'float' to 'byte', possible loss of data
+  dllmain.cpp
+     Creating library C:\Sem5\JAApp\x64\Release\CppDLL.lib and object C:\Sem5\JAApp\x64\Release\CppDLL.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 2 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  CppDLL.vcxproj -> C:\Sem5\JAApp\x64\Release\CppDLL.dll

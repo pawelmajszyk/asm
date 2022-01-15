@@ -1,6 +1,6 @@
 ﻿  Assembling algo.asm...
-algo.asm(37): warning A6004: procedure argument or local not referenced : var1
-algo.asm(37): warning A6004: procedure argument or local not referenced : var2
-algo.asm(37): warning A6004: procedure argument or local not referenced : jmpAddress
+algo.asm(96): warning A6004: procedure argument or local not referenced : var1
+algo.asm(96): warning A6004: procedure argument or local not referenced : var2
+algo.asm(96): warning A6004: procedure argument or local not referenced : jmpAddress
      Creating library C:\Sem5\JAApp\x64\Debug\Test2.lib and object C:\Sem5\JAApp\x64\Debug\Test2.exp
   Test2.vcxproj -> C:\Sem5\JAApp\x64\Debug\Test2.dll

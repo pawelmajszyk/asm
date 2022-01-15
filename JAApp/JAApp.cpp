@@ -3,7 +3,7 @@
 #include <sstream>
 #include <string.h>
 #include "Image.h"
-
+#include <chrono>
 #include<thread>
 #include <vector>
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
@@ -177,7 +177,7 @@ void prepareData(std::string fileName, int threads)
     int32 bytesPerPixel;
     readImage(buffer, &pixels, &width, &height, &bytesPerPixel);
 
-    hinstLib = LoadLibrary(TEXT("C:\\Sem5\\JAApp\\x64\\Debug\\Test2.dll"));
+    hinstLib = LoadLibrary(TEXT("C:\\Sem5\\JAApp\\x64\\Release\\CppDLL.dll"));
     if (hinstLib != NULL)
     {
         prepareThreads(ProcAdd, hinstLib, fRunTimeLinkSuccess, bytesPerPixel, width, height, pixels,threads);
@@ -191,20 +191,28 @@ void prepareThreads(Sepia& ProcAdd, const HINSTANCE& hinstLib,
     BOOL& fRunTimeLinkSuccess, int32& bytesPerPixel, const int32& width,
     const int32& height, byte* pixels, int thread)
 {
-    ProcAdd = (Sepia)GetProcAddress(hinstLib, "MyProc1");
+    ProcAdd = (Sepia)GetProcAddress(hinstLib, "sepia");
     if (NULL != ProcAdd)
     {
         fRunTimeLinkSuccess = TRUE;
-        int threadsAmount = 1;
+        int threadsAmount = 2;
         int sizeOfSubArray = (bytesPerPixel * width * height) / threadsAmount;
         std::vector<std::thread> threads;
+
+
         for (int i = 0; i < threadsAmount; i++) {
 
             threads.push_back(std::thread(ProcAdd, pixels + i * sizeOfSubArray, sizeOfSubArray, bytesPerPixel));
         }
+        std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
         for (auto& th : threads) {
             th.join();
         }
+        std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
+
+        std::cout << "xD";
+       long long x =  std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count();
+       std::cout << x;
 
     }
 }
