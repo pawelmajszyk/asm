@@ -1,0 +1,9 @@
+﻿  Assembling algorytm2.asm...
+algorytm2.asm(15): warning A6004: procedure argument or local not referenced : hInstDLL
+algorytm2.asm(15): warning A6004: procedure argument or local not referenced : reason
+algorytm2.asm(15): warning A6004: procedure argument or local not referenced : reserved1
+algorytm2.asm(20): warning A6004: procedure argument or local not referenced : x
+algorytm2.asm(20): warning A6004: procedure argument or local not referenced : y
+     Creating library C:\Sem5\JAApp\Debug\JADll.lib and object C:\Sem5\JAApp\Debug\JADll.exp
+JADll.exp : warning LNK4070: /OUT:JADll.dll directive in .EXP differs from output filename 'C:\Sem5\JAApp\Debug\JADll.exe'; ignoring directive
+  JAdll.vcxproj -> C:\Sem5\JAApp\Debug\JADll.exe

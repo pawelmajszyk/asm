@@ -1,0 +1,17 @@
+﻿  pch.cpp
+  algorytmCpp.cpp
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(10,1): warning C4273: 'sepia': inconsistent dll linkage
+C:\Sem5\JAApp\CppDLL\algorytmCpp.h(13,33): message : see previous definition of 'sepia'
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(20,39): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(21,37): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(22,34): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(24,60): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(25,62): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(26,61): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(30,25): warning C4244: '=': conversion from 'float' to 'byte', possible loss of data
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(31,25): warning C4244: '=': conversion from 'float' to 'byte', possible loss of data
+C:\Sem5\JAApp\CppDLL\algorytmCpp.cpp(32,21): warning C4244: '=': conversion from 'float' to 'byte', possible loss of data
+  dllmain.cpp
+  Generating Code...
+     Creating library C:\Sem5\JAApp\Debug\CppDLL.lib and object C:\Sem5\JAApp\Debug\CppDLL.exp
+  CppDLL.vcxproj -> C:\Sem5\JAApp\Debug\CppDLL.dll

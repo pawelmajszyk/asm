@@ -1,0 +1,6 @@
+﻿  Assembling algo.asm...
+algo.asm(1): error A2013: .MODEL must precede this directive
+algo.asm(2): error A2034: must be in segment block : MyProc1
+algo.asm(3): error A2034: must be in segment block
+algo.asm(4): fatal error A1010: unmatched block nesting : MyProc1
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\BuildCustomizations\masm.targets(70,5): error MSB3721: The command "ml.exe /c /nologo /Zi /Fo"Debug\algo.obj" /W3 /errorReport:prompt  /Taalgo.asm" exited with code 1.
